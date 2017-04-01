@@ -1,0 +1,6 @@
+D:\EFtest\FactoryMethodPattern\FactoryMethodPattern\bin\Debug\FactoryMethodPattern.exe.config
+D:\EFtest\FactoryMethodPattern\FactoryMethodPattern\bin\Debug\FactoryMethodPattern.exe
+D:\EFtest\FactoryMethodPattern\FactoryMethodPattern\bin\Debug\FactoryMethodPattern.pdb
+D:\EFtest\FactoryMethodPattern\FactoryMethodPattern\obj\Debug\FactoryMethodPattern.exe
+D:\EFtest\FactoryMethodPattern\FactoryMethodPattern\obj\Debug\FactoryMethodPattern.pdb
+D:\EFtest\FactoryMethodPattern\FactoryMethodPattern\obj\Debug\FactoryMethodPattern.csprojResolveAssemblyReference.cache
