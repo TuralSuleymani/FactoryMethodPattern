@@ -1,4 +1,5 @@
-﻿using FactoryMethodPattern.Factory.IniConfig;
+﻿using FactoryMethodPattern.Factory;
+using FactoryMethodPattern.Factory.IniConfig;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,16 +12,9 @@ namespace FactoryMethodPattern
     {
         static void Main(string[] args)
         {
-            IniConfigurator ini = new IniConfigurator();
+            FromIniMailEmulator fime = new Factory.FromIniMailEmulator();
+            fime.Send();
             
-            ini.Config = new IniConfig();
-            ini.Config.ConnectionParam = "D:/file.ini";
-            Dictionary<string, string> pairs = new Dictionary<string, string>();
-            pairs.Add("Simon", "123423ewqd");
-            ini.Insert(pairs);
-            
-           
-
         }
     }
 }

@@ -44,15 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Factory\Common\Configurator.cs" />
-    <Compile Include="Factory\Common\DbConfigurator.cs" />
     <Compile Include="Factory\Common\IConfig.cs" />
-    <Compile Include="Factory\IniConfig\IniConfig.cs" />
     <Compile Include="Factory\IniConfig\IniConfigurator.cs" />
-    <Compile Include="Factory\JsonConfig\JsonConfig.cs" />
     <Compile Include="Factory\JsonConfig\JsonConfigurator.cs" />
-    <Compile Include="Factory\MySqlConfig\MySqlDbConfig.cs" />
     <Compile Include="Factory\MySqlConfig\MySqlDbConfigurator.cs" />
-    <Compile Include="Factory\MsSqlConfig\SqlDbConfig.cs" />
     <Compile Include="Factory\MsSqlConfig\SqlDbConfigurator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

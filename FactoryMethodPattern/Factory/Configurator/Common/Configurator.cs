@@ -6,20 +6,16 @@ namespace FactoryMethodPattern.Factory.Common
     /// Configuration for multiple containers
     /// Contaner can be DB,XML,JSON etc.
     /// </summary>
-    public abstract class Configurator:IConfig
+    public class Configurator
     {
+        protected IConfig _config;
+        public Configurator(IConfig conf)
+        {
+            this._config = conf;
+        }
         public string Read<T>(T key)
         {
-           return Config.Read(key);
-        }
-
-        public abstract IConfig GetConfig();
-        protected IConfig _config;
-
-        public IConfig Config
-        {
-            set { _config = GetConfig(); }
-            get { return _config == null ? _config = GetConfig() : _config; }
+           return this._config.Read(key);
         }
 
         public string ConnectionParam
@@ -29,14 +25,14 @@ namespace FactoryMethodPattern.Factory.Common
 
         public  void Write<K,V>(KeyValuePair<K,V> pair)
         {
-            Config.Write(pair);
+            this._config.Write(pair);
         }
 
         public void Insert<K,V>(Dictionary<K,V> pairs)
         {
             foreach (KeyValuePair<K,V> pair in pairs)
             {
-                Config.Write(pair);
+                this._config.Write(pair);
             }
         }
 
